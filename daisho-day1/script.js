@@ -4,6 +4,7 @@ helloBtn.addEventListener("click",()=>{
     const hour=new Date().getHours();
     let greeting="こんにちは！";
     if(hour<12){
-        greeting=""
+        greeting="こんばんわ！";
     }
-}
+    message.textContent='${greeting}GitHub Pages の公開に成功しました！';
+});
