@@ -1,0 +1,24 @@
+body{
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    text-align:center;
+    background:#f2f7fb;
+    color:#333;
+    margin:0;
+    padding:80xp 0;
+}
+button{
+    background:#0078d7;
+    color:white;
+    border:none;
+    padding:12xp 24xp;
+    border-radius: 8xp;
+    cursor:pointer;
+}
+button:hover{
+    background:#005fa3;
+}
+.message{
+    margin-top:24xp;
+    font-size:18xp;
+    font-weight:bold;
+}
