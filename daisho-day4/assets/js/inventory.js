@@ -7,12 +7,12 @@ let items = [
 
 
 // ▼ localStorage に保存する際のキー名（引き出しのラベル）
-const sf_mcb6l956b42bha799ii2fek8 = "inventory-items";
+const STORAGE_KEY = "inventory-items";
 
 
 // --- localStorage から在庫データを読み込む ---
 function loadFromStorage() {
-  const json = localStorage.getItem(sf_mcb6l956b42bha799ii2fek8);
+  const json = localStorage.getItem(STORAGE_KEY);
   if (!json) return; // まだ保存されていないときは何もしない
 
 
@@ -30,7 +30,7 @@ function loadFromStorage() {
 // --- localStorage に在庫データを保存 ---
 function saveToStorage() {
   const json = JSON.stringify(items); // 配列 → JSON文字列
-  localStorage.setItem(sf_mcb6l956b42bha799ii2fek8, json);
+  localStorage.setItem(STORAGE_KEY, json);
   console.log("在庫データを保存しました");
 }
 
@@ -155,3 +155,4 @@ window.addEventListener("DOMContentLoaded", () => {
     mailBtn.addEventListener("click", sendInventoryMailViaStaticForms);
   }
 });
+
